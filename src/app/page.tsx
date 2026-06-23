@@ -8,6 +8,7 @@ import Drinks from "@/components/drinks";
 import Experience from "@/components/experience";
 import Staff from "@/components/staff";
 import Rules from "@/components/rules";
+import Albums from "@/components/albums";
 import Reserve from "@/components/reserve";
 import Footer from "@/components/footer";
 import Confetti from "@/components/confetti";
@@ -28,6 +29,7 @@ export default function Home() {
       <Experience />
       <Staff />
       <Rules />
+      <Albums />
       <Reserve />
       <Footer />
     </div>
