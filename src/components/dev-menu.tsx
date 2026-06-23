@@ -27,7 +27,8 @@ export default function DevMenu() {
   const { enabled, startDate, status, setEnabled, setStartDate } =
     useEventConfig()
 
-  if (process.env.NODE_ENV !== "development") return null
+  const isProduction = process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
+  if (isProduction) return null
 
   const badge = STATUS_LABEL[status]
 
