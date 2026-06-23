@@ -14,6 +14,24 @@
 - **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
 - **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
 
+## Tailwind Styling Rules
+- **Use Tailwind CSS for all styling by default.**
+- Do not create custom CSS files unless absolutely necessary for:
+  - keyframe animations
+  - complex masks
+  - browser-specific fixes
+  - third-party library overrides
+- Prefer Tailwind utility classes over CSS modules, styled-components, emotion, or inline styles.
+- If a style can be expressed with Tailwind, it must be expressed with Tailwind.
+- Use Tailwind arbitrary values (`[value]`) when needed instead of creating custom CSS classes.
+- Keep component styling colocated in the JSX/TSX markup.
+- Avoid global CSS except for:
+  - font imports
+  - CSS variables (design tokens)
+  - resets
+  - scrollbar customization
+- Never move visual styling into separate CSS files solely for organization purposes.
+
 ## Hard Rules
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it
